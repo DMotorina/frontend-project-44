@@ -4,6 +4,7 @@
 
 [![Actions Status](https://github.com/DMotorina/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/DMotorina/frontend-project-44/actions)
 
+Brain-even:
 Setup:
 <a href="https://asciinema.org/a/Cc3TbNKySepJ6zX7Kdh3EJuJQ" target="_blank"><img src="https://asciinema.org/a/Cc3TbNKySepJ6zX7Kdh3EJuJQ.svg" /></a>
 
@@ -15,3 +16,16 @@ Victory:
 
 Losing:
 <a href="https://asciinema.org/a/kQ3ZLghEFPR5xLGSXXyBy4mxw" target="_blank"><img src="https://asciinema.org/a/kQ3ZLghEFPR5xLGSXXyBy4mxw.svg" /></a>
+
+Brain-calc:
+Setup:
+<a href="https://asciinema.org/a/4EjC8xiLVywqXHx1fYtjxw1yo" target="_blank"><img src="https://asciinema.org/a/4EjC8xiLVywqXHx1fYtjxw1yo.svg" /></a>
+
+Run:
+<a href="https://asciinema.org/a/610371" target="_blank"><img src="https://asciinema.org/a/610371.svg" /></a>
+
+Victory:
+<a href="https://asciinema.org/a/610372" target="_blank"><img src="https://asciinema.org/a/610372.svg" /></a>
+
+Losing:
+<a href="https://asciinema.org/a/610373" target="_blank"><img src="https://asciinema.org/a/610373.svg" /></a>
