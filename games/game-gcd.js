@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+
 import {
   printWelcome,
   createRandomNumber,
