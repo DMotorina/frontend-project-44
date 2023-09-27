@@ -10,7 +10,7 @@ export const guardExpression = (name, description, requiredFunction) => {
 
 export const createRandomNumber = () => Math.round(Math.random() * 10);
 
-export const printWelcome = () => console.log('Welcome to the Brain Games');
+export const printWelcome = () => console.log('Welcome to the Brain Games!');
 
 export const printQuestion = (data) => console.log(`Question: ${data}`);
 
