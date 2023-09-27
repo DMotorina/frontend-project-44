@@ -58,3 +58,17 @@ Victory:
 
 Losing:
 <a href="https://asciinema.org/a/610636" target="_blank"><img src="https://asciinema.org/a/610636.svg" /></a>
+
+
+Brain-prime
+Setup:
+<a href="https://asciinema.org/a/610662" target="_blank"><img src="https://asciinema.org/a/610662.svg" /></a>
+
+Run:
+<a href="https://asciinema.org/a/610663" target="_blank"><img src="https://asciinema.org/a/610663.svg" /></a>
+
+Victory:
+<a href="https://asciinema.org/a/610665" target="_blank"><img src="https://asciinema.org/a/610665.svg" /></a>
+
+Losing:
+<a href="https://asciinema.org/a/610666" target="_blank"><img src="https://asciinema.org/a/610666.svg" /></a>
