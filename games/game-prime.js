@@ -47,12 +47,12 @@ const playBrainPrime = () => {
     const userAnswer = readlineSync.question('Your answer: ');
     const rightAnswer = isPrime(createArrWithDivisors(num), num);
 
-    if (userAnswer !== rightAnswer) {
-      if (!userAnswer) {
-        ifAnswerIsEmpty(userName);
-        return;
-      }
+    if (userAnswer !== rightAnswer && !userAnswer) {
+      ifAnswerIsEmpty(userName);
+      return;
+    }
 
+    if (userAnswer !== rightAnswer) {
       printWrongAnswer(userAnswer, rightAnswer, userName);
       return;
     }

@@ -35,12 +35,12 @@ const playBrainCalc = () => {
     const userAnswer = readlineSync.question('Your answer: ');
     const rightAnswer = operations[operator](num1, num2);
 
-    if (Number(userAnswer) !== rightAnswer) {
-      if (!userAnswer) {
-        ifAnswerIsEmpty(userName);
-        return;
-      }
+    if (Number(userAnswer) !== rightAnswer && !userAnswer) {
+      ifAnswerIsEmpty(userName);
+      return;
+    }
 
+    if (Number(userAnswer) !== rightAnswer) {
       printWrongAnswer(userAnswer, rightAnswer, userName);
       return;
     }

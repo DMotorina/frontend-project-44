@@ -30,12 +30,12 @@ const playBrainEven = () => {
     const isNumberEven = isEven(num);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (getUserAnswerToBool(userAnswer) !== isNumberEven) {
-      if (!userAnswer) {
-        ifAnswerIsEmpty(userName);
-        return;
-      }
+    if (getUserAnswerToBool(userAnswer) !== isNumberEven && !userAnswer) {
+      ifAnswerIsEmpty(userName);
+      return;
+    }
 
+    if (getUserAnswerToBool(userAnswer) !== isNumberEven) {
       printWrongAnswer(userAnswer, getNumberEvenAsToBool(isNumberEven), userName);
       return;
     }
