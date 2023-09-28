@@ -4,11 +4,10 @@ import createRandomNumber from '../randomNumberGenerator.js';
 const initText = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (arr, num) => {
-  const questionAboutLength = arr.length === 2 || arr.length === 1;
   const lastElement = arr[arr.length - 1];
   const firstElement = arr[0];
 
-  return questionAboutLength && (lastElement === num) && (firstElement === 1) ? 'yes' : 'no';
+  return arr.length === 2 && (lastElement === num) && (firstElement === 1) ? 'yes' : 'no';
 };
 
 const createArrWithDivisors = (num) => {

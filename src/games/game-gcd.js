@@ -3,7 +3,13 @@ import createRandomNumber from '../randomNumberGenerator.js';
 
 const initText = 'Find the greatest common divisor of given numbers.';
 
-const findGcd = (x, y) => ((x !== 0 && y !== 0) ? findGcd(y, x % y) : x);
+const findGcd = (x, y) => {
+  if (x !== 0 && y !== 0) {
+    findGcd(y, x % y);
+  }
+
+  return x || y;
+};
 
 const startRound = () => {
   const randomNumber1 = createRandomNumber();
