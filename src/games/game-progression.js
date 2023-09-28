@@ -1,4 +1,5 @@
-import gameFactory, { createRandomNumber } from '../index.js';
+import gameFactory from '../index.js';
+import createRandomNumber from '../randomNumberGenerator.js';
 
 const initText = 'What number is missing in the progression?';
 

@@ -1,4 +1,5 @@
-import gameFactory, { createRandomNumber } from '../index.js';
+import gameFactory from '../index.js';
+import createRandomNumber from '../randomNumberGenerator.js';
 
 const initText = 'Answer "yes" if the number is even, otherwise answer "no".';
 

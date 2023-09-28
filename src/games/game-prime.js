@@ -1,4 +1,5 @@
-import gameFactory, { createRandomNumber } from '../index.js';
+import gameFactory from '../index.js';
+import createRandomNumber from '../randomNumberGenerator.js';
 
 const initText = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
