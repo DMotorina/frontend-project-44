@@ -1,3 +1,32 @@
+Description
+It is a collection of 5 console mathematical games for brain training:
+
+1. brain-even - Determine if a number is even.
+2. brain-calc - Calculate arithmetical expressions.
+3. brain-gcd - Determine the greatest common divisor.
+4. brain-progression - Determine a missing number in a progression.
+5. brain-prime - Determine if a number is prime.
+
+
+Setup
+1. sudo apt install make
+2. make install
+3. Run games:
+- make brain-even
+- make brain-calc
+- make brain-gcd
+- make brain-progression
+- make brain-prime
+
+
+Dependencies
+1. readline-sync
+
+devDependencies:
+1. eslint
+2. eslint-config-airbnb-base
+3. eslint-plugin-import
+
 ### Hexlet tests and linter status:
 
 <a href="https://codeclimate.com/github/DMotorina/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/3c7106b458caa5fb2e4c/maintainability" /></a>
@@ -6,69 +35,20 @@
 
 
 Brain-even
-Setup:
-<a href="https://asciinema.org/a/Cc3TbNKySepJ6zX7Kdh3EJuJQ" target="_blank"><img src="https://asciinema.org/a/Cc3TbNKySepJ6zX7Kdh3EJuJQ.svg" /></a>
-
-Run:
-<a href="https://asciinema.org/a/qjP4PXmJpdOpGWa4MiNyJXtri" target="_blank"><img src="https://asciinema.org/a/qjP4PXmJpdOpGWa4MiNyJXtri.svg" /></a>
-
-Victory:
-<a href="https://asciinema.org/a/qiheBTcmDynMLADBJzMaSQAdJ" target="_blank"><img src="https://asciinema.org/a/qiheBTcmDynMLADBJzMaSQAdJ.svg" /></a>
-
-Losing:
-<a href="https://asciinema.org/a/kQ3ZLghEFPR5xLGSXXyBy4mxw" target="_blank"><img src="https://asciinema.org/a/kQ3ZLghEFPR5xLGSXXyBy4mxw.svg" /></a>
+<a href="https://asciinema.org/a/610883" target="_blank"><img src="https://asciinema.org/a/610883.svg" /></a>
 
 
 Brain-calc
-Setup:
-<a href="https://asciinema.org/a/4EjC8xiLVywqXHx1fYtjxw1yo" target="_blank"><img src="https://asciinema.org/a/4EjC8xiLVywqXHx1fYtjxw1yo.svg" /></a>
+<a href="https://asciinema.org/a/610884" target="_blank"><img src="https://asciinema.org/a/610884.svg" /></a>
 
-Run:
-<a href="https://asciinema.org/a/610371" target="_blank"><img src="https://asciinema.org/a/610371.svg" /></a>
-
-Victory:
-<a href="https://asciinema.org/a/610372" target="_blank"><img src="https://asciinema.org/a/610372.svg" /></a>
-
-Losing:
-<a href="https://asciinema.org/a/610373" target="_blank"><img src="https://asciinema.org/a/610373.svg" /></a>
 
 Brain-gcd
-Setup:
-<a href="https://asciinema.org/a/610452" target="_blank"><img src="https://asciinema.org/a/610452.svg" /></a>
-
-Run:
-<a href="https://asciinema.org/a/610455" target="_blank"><img src="https://asciinema.org/a/610455.svg" /></a>
-
-Victory:
-<a href="https://asciinema.org/a/610453" target="_blank"><img src="https://asciinema.org/a/610453.svg" /></a>
-
-Losing:
-<a href="https://asciinema.org/a/610457" target="_blank"><img src="https://asciinema.org/a/610457.svg" /></a>
+<a href="https://asciinema.org/a/610886" target="_blank"><img src="https://asciinema.org/a/610886.svg" /></a>
 
 
 Brain-progression
-Setup:
-<a href="https://asciinema.org/a/610631" target="_blank"><img src="https://asciinema.org/a/610631.svg" /></a>
-
-Run:
-<a href="https://asciinema.org/a/610633" target="_blank"><img src="https://asciinema.org/a/610633.svg" /></a>
-
-Victory:
-<a href="https://asciinema.org/a/610635" target="_blank"><img src="https://asciinema.org/a/610635.svg" /></a>
-
-Losing:
-<a href="https://asciinema.org/a/610636" target="_blank"><img src="https://asciinema.org/a/610636.svg" /></a>
+<a href="https://asciinema.org/a/610895" target="_blank"><img src="https://asciinema.org/a/610895.svg" /></a>
 
 
 Brain-prime
-Setup:
-<a href="https://asciinema.org/a/610662" target="_blank"><img src="https://asciinema.org/a/610662.svg" /></a>
-
-Run:
-<a href="https://asciinema.org/a/610663" target="_blank"><img src="https://asciinema.org/a/610663.svg" /></a>
-
-Victory:
-<a href="https://asciinema.org/a/610665" target="_blank"><img src="https://asciinema.org/a/610665.svg" /></a>
-
-Losing:
-<a href="https://asciinema.org/a/610666" target="_blank"><img src="https://asciinema.org/a/610666.svg" /></a>
+<a href="https://asciinema.org/a/610897" target="_blank"><img src="https://asciinema.org/a/610897.svg" /></a>

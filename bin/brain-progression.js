@@ -1,4 +1,3 @@
-import playBrainProgression, { userName } from '../games/game-progression.js';
-import { guardExpression } from '../src/index.js';
+import runGame from '../src/games/game-progression.js';
 
-guardExpression(userName, 'What number is missing in the progression?', playBrainProgression);
+runGame();

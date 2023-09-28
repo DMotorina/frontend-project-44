@@ -1,24 +1,30 @@
-export const guardExpression = (name, description, requiredFunction) => {
-  if (name) {
-    console.log(`Hello, ${name}!`);
-    console.log(description);
-    requiredFunction();
-  } else {
-    console.log('Please enter your name');
-  }
-};
+import readlineSync from 'readline-sync';
 
 export const createRandomNumber = () => Math.round(Math.random() * 10);
 
-export const printWelcome = () => console.log('Welcome to the Brain Games!');
+const gameFactory = (rules, startRound) => () => {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  console.log(rules);
+  let roundCount = 0;
 
-export const printQuestion = (data) => console.log(`Question: ${data}`);
+  while (roundCount < 3) {
+    const [question, rightAnswer] = startRound();
+    console.log(question);
+    const userAnswer = readlineSync.question('Your answer: ');
 
-export const printWrongAnswer = (userAnswer, rightAnswer, name) => {
-  console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
-  console.log(`Let's try again, ${name}!`);
+    if (userAnswer !== rightAnswer) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
+      console.log(`Let's try again, ${userName}!`);
+      return;
+    }
+
+    console.log('Correct!');
+    roundCount += 1;
+  }
+
+  console.log(`Congratulations, ${userName}!`);
 };
 
-export const printVictory = (name) => console.log(`Congratulations, ${name}!`);
-
-export const ifAnswerIsEmpty = (name) => console.log(`You didn't write anything. Please write your answer, ${name}.`);
+export default gameFactory;
