@@ -4,7 +4,7 @@
 
 [![Actions Status](https://github.com/DMotorina/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/DMotorina/frontend-project-44/actions)
 
-### Description
+## Description
 It is a collection of 5 console mathematical games for brain training:
 
 - **brain-even** - Determine if a number is even.
@@ -26,29 +26,29 @@ The minimum version of node.js - 13.2.0
 
 ## Install
 
-#### Clone repository
+### Clone repository
 
 ```
 git clone git@github.com:DMotorina/frontend-project-44.git
 ``` 
 
-#### Go to the desired folder
+### Go to the desired folder
 ```
 cd frontend-project-44/
 ```
 
-#### Install make
+### Install make
 
 ```
 make install
 ```
 
-#### Debugging
+### Debugging
 ```
 make publish
 ```
 
-#### Checking that everything is updated
+### Checking that everything is updated
 ```
 sudo npm link
 ```
