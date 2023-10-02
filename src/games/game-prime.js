@@ -1,5 +1,5 @@
-import gameFactory from '../index.js';
-import createRandomNumber from '../randomNumberGenerator.js';
+import runGameFactory from '../index.js';
+import createRandomNumber from '../utils/randomNumberGenerator.js';
 
 const initText = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -26,12 +26,12 @@ const createArrWithDivisors = (num) => {
 };
 
 const startRound = () => {
-  const randomNumber = createRandomNumber();
+  const randomNumber = createRandomNumber(1, 100);
   const rightAnswer = isPrime(createArrWithDivisors(randomNumber), randomNumber);
   const question = `Question: ${randomNumber}`;
   return [question, rightAnswer];
 };
 
-const runGame = gameFactory(initText, startRound);
+const runGame = runGameFactory(initText, startRound);
 
 export default runGame;

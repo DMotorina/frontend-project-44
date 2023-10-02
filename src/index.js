@@ -1,11 +1,12 @@
 import readlineSync from 'readline-sync';
 
-const gameFactory = (rules, startRound) => () => {
+let roundCount = 0;
+
+const runGameFactory = (rule, startRound) => () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  console.log(rules);
-  let roundCount = 0;
+  console.log(rule);
 
   while (roundCount < 3) {
     const [question, rightAnswer] = startRound();
@@ -25,4 +26,4 @@ const gameFactory = (rules, startRound) => () => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default gameFactory;
+export default runGameFactory;

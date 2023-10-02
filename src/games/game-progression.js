@@ -1,11 +1,11 @@
-import gameFactory from '../index.js';
-import createRandomNumber from '../randomNumberGenerator.js';
+import runGameFactory from '../index.js';
+import createRandomNumber from '../utils/randomNumberGenerator.js';
 
 const initText = 'What number is missing in the progression?';
 
 const createProgression = (firstElement, step) => {
   const progression = [];
-  const length = Math.floor(Math.random() * 6) + 5;
+  const length = createRandomNumber(5, 10);
   let i = 0;
 
   while (i < length) {
@@ -30,11 +30,11 @@ const removeRandomNumberInProgression = (progression, hiddenIndex) => {
   return resultProgression;
 };
 
-const getHiddenIndex = (arr) => Math.floor(Math.random() * arr.length);
+const getHiddenIndex = (arr) => createRandomNumber(2, arr.length);
 
 const startRound = () => {
-  const initialNumber = createRandomNumber();
-  const step = createRandomNumber();
+  const initialNumber = createRandomNumber(1, 10);
+  const step = createRandomNumber(1, 5);
   const arrayOfProgression = createProgression(initialNumber, step);
   const index = getHiddenIndex(arrayOfProgression);
   const progression = removeRandomNumberInProgression(arrayOfProgression, index);
@@ -44,6 +44,6 @@ const startRound = () => {
   return [question, rightAnswer];
 };
 
-const runGame = gameFactory(initText, startRound);
+const runGame = runGameFactory(initText, startRound);
 
 export default runGame;
