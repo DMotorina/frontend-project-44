@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/DMotorina/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/DMotorina/frontend-project-44/actions)",
+  "description": "Hexlet educational project for creating console games.",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -18,8 +18,6 @@
   },
   "homepage": "https://github.com/DMotorina/frontend-project-44#readme",
   "dependencies": {
-    "link": "^1.5.1",
-    "node-modules": "^1.0.1",
     "readline-sync": "^1.4.10"
   },
   "bin": {
