@@ -33,7 +33,7 @@ const removeRandomNumberInProgression = (progression, hiddenIndex) => {
 const getHiddenIndex = (arr) => createRandomNumber(2, arr.length);
 
 const startRound = () => {
-  const initialNumber = createRandomNumber(1, 10);
+  const initialNumber = createRandomNumber(-10, 10);
   const step = createRandomNumber(1, 5);
   const arrayOfProgression = createProgression(initialNumber, step);
   const index = getHiddenIndex(arrayOfProgression);

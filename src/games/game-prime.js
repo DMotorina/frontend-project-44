@@ -26,7 +26,7 @@ const createArrWithDivisors = (num) => {
 };
 
 const startRound = () => {
-  const randomNumber = createRandomNumber(1, 100);
+  const randomNumber = createRandomNumber(-50, 100);
   const rightAnswer = isPrime(createArrWithDivisors(randomNumber), randomNumber);
   const question = `Question: ${randomNumber}`;
   return [question, rightAnswer];
