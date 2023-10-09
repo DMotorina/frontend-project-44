@@ -19,8 +19,10 @@ const isPrime = (number) => {
 
 const startRound = () => {
   const randomNumber = createRandomNumber(-50, 100);
+  const quest = `${randomNumber}`;
   const rightAnswer = isPrime(randomNumber) ? 'yes' : 'no';
-  return [`${randomNumber}`, rightAnswer];
+
+  return [quest, rightAnswer];
 };
 
 const runGame = runGameFactory(initText, startRound);

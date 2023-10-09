@@ -17,9 +17,10 @@ const startRound = () => {
   const randomNumber2 = createRandomNumber(1, 50);
   const index = createRandomIndex(keys);
   const key = keys[index];
+  const quest = `${randomNumber1} ${key} ${randomNumber2}`;
   const rightAnswer = String(operations[key](randomNumber1, randomNumber2));
 
-  return [`${randomNumber1} ${key} ${randomNumber2}`, rightAnswer];
+  return [quest, rightAnswer];
 };
 
 const runGame = runGameFactory(initText, startRound);

@@ -7,9 +7,8 @@ const runGameFactory = (rule, generateRound) => () => {
   console.log(rule);
 
   for (let roundCount = 0; roundCount < 3; roundCount += 1) {
-    const [conditions, rightAnswer] = generateRound();
-    const question = `Question ${conditions}`;
-    console.log(question);
+    const [question, rightAnswer] = generateRound();
+    console.log(`Question ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer !== rightAnswer) {

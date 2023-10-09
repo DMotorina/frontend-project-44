@@ -7,9 +7,10 @@ const isEven = (number) => number % 2 === 0;
 
 const startRound = () => {
   const randomNumber = createRandomNumber(1, 100);
+  const quest = `${randomNumber}`;
   const rightAnswer = isEven(randomNumber) ? 'yes' : 'no';
 
-  return [`${randomNumber}`, rightAnswer];
+  return [quest, rightAnswer];
 };
 
 const runGame = runGameFactory(initText, startRound);

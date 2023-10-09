@@ -23,10 +23,11 @@ const startRound = () => {
 
   const progression = createProgression(initialNumber, progressionLength, step);
   const hiddenIndex = createRandomIndex(progression);
+  const quest = `${progression.join(' ')}`;
   const rightAnswer = String(progression[hiddenIndex]);
   progression[hiddenIndex] = '...';
 
-  return [`${progression.join(' ')}`, rightAnswer];
+  return [quest, rightAnswer];
 };
 
 const runGame = runGameFactory(initText, startRound);
