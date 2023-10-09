@@ -3,33 +3,24 @@ import createRandomNumber from '../utils/randomNumberGenerator.js';
 
 const initText = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const isPrime = (arr, num) => {
-  const lastElement = arr[arr.length - 1];
-  const firstElement = arr[0];
-
-  return arr.length === 2 && (lastElement === num) && (firstElement === 1) ? 'yes' : 'no';
-};
-
-const createArrWithDivisors = (num) => {
-  const arrWithDivisors = [];
-  let i = 1;
-
-  while (i <= num) {
-    if (Number.isInteger(num / i)) {
-      arrWithDivisors.push(i);
-    }
-
-    i += 1;
+const isPrime = (number) => {
+  if (number < 2) {
+    return false;
   }
 
-  return arrWithDivisors;
+  for (let i = 2; i <= number / 2; i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
 };
 
 const startRound = () => {
   const randomNumber = createRandomNumber(-50, 100);
-  const rightAnswer = isPrime(createArrWithDivisors(randomNumber), randomNumber);
-  const question = `Question: ${randomNumber}`;
-  return [question, rightAnswer];
+  const rightAnswer = isPrime(randomNumber) ? 'yes' : 'no';
+  return [`${randomNumber}`, rightAnswer];
 };
 
 const runGame = runGameFactory(initText, startRound);
