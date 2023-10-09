@@ -24,7 +24,7 @@ const startRound = () => {
   const progression = createProgression(initialNumber, progressionLength, step);
   const hiddenIndex = createRandomIndex(progression);
   const rightAnswer = String(progression[hiddenIndex]);
-  progression[hiddenIndex] = '...';
+  progression[hiddenIndex] = '..';
   const quest = `${progression.join(' ')}`;
 
   return [quest, rightAnswer];
